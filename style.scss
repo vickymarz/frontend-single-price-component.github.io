@@ -8,16 +8,6 @@ $my-padding: 1rem 0;
 $my-color: #ffffff;
 // global variables ends here
 
-// font imports
-@font-face {
-	font-family: 'Karla Regular';
-	src: url(../frontendmentor03/Karla/static/Karla-Regular.ttf);
-}
-@font-face {
-	font-family: 'Karla';
-	src: url(../frontendmentor03/Karla/static/Karla-Bold.ttf);
-}
-
 // inheritance/extension
 %body-width {
 	width: 90%;
@@ -29,14 +19,12 @@ $my-color: #ffffff;
 	padding-bottom: 1rem;
 }
 %my-font-regular {
-	font-family: Karla Regular;
-	// font-family: 'Karla', sans-serif;
-	// font-weight: 400;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
 }
 %my-font-bold {
-	font-family: Karla;
-	// font-family: 'Karla', sans-serif;
-	// font-weight: 700;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
 }
 
 // global styling starts here
@@ -49,9 +37,8 @@ $my-color: #ffffff;
 }
 html {
 	font-size: $fontsize;
-	@extend %my-font-regular;
-	// font-family: 'karla', sans-serif;
-	// font-weight: 400;
+	font-family: 'karla', sans-serif;
+	font-weight: 400;
 }
 body {
 	background-color: $gray_neutral_color;
